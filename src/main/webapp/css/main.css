@@ -1,0 +1,23 @@
+.button-settings{
+    background-image: url('../picture/settings.png') !important;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.button-excel{
+    background-image: url('../picture/excel.png') !important;
+    background-repeat: no-repeat;
+
+}
+.button-beauty{
+    background-image: url('../picture/beautify.png') !important;
+    background-repeat: no-repeat;
+}
+.button-save{
+    background-image: url('../picture/save2.png') !important;
+    background-repeat: no-repeat;
+}
+.button-open{
+    background-image: url('../picture/folder.png') !important;
+    background-repeat: no-repeat;
+}
