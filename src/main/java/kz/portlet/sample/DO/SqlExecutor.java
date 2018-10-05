@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 /*Json libraries*/
+import jxl.write.WritableWorkbook;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONException;
@@ -13,16 +14,18 @@ import oracle.jdbc.OracleTypes;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.sql.DataSource;
+import java.io.ByteArrayOutputStream;
 import java.sql.*;
+import java.util.*;
 import java.util.Date;
-import java.util.HashMap;
 
 /**
  *
  * @author Aidar.Myrzahanov
  */
-public class SqlExecutor {
+public class SqlExecutor extends Executor{
 
     private static final String FETCH_EXPLAIN_PLAN_QUERY = "select plan_table_output from table(dbms_xplan.display())";
 
@@ -51,26 +54,31 @@ public class SqlExecutor {
     private QueryType queryType;
     private boolean usingConnectionPool;
 
-    private ResultsTable queryResultTable;
+    //private ResultsTable queryResultTable;
+    public ByteArrayOutputStream xlsResultTable;
     private JSONArray textResults;
+    private String[] fieldLists;
     public long executionTimeMillis;
-    private int affectedRowsCount;
+    private int affectedRowsCount=0;
     public int rowsCount;
     private String exceptionMessage;
     private int sqlErrorPosition = -1;
     private boolean isMaintenance;
 
 
-    /* Констроуктор */
-    public SqlExecutor(QuerySettings settings, String _user, String _password, String _url, QueryType qType) {
+    /* Конструктор */
+    public SqlExecutor(QuerySettings settings, String _user, String _password, String _url, QueryType qType, String limit, String timeOut) {
 
         this.connectionStringProperty= _url;
         this.usernameProperty = _user;
         this.passwordProperty = _password;
         this.queryType = qType;
 
-        System.out.println("qType:"+qType);
-        System.out.println("queryType:"+queryType);
+        //this.limitProperty = Integer.valueOf(limit).intValue();
+        //this.timeoutProperty = Integer.valueOf(timeOut).intValue();
+
+        //System.out.println("qType:"+qType);
+        //System.out.println("queryType:"+queryType);
         this.settings = settings;
         usingConnectionPool = false;
         Connection connection = null;
@@ -148,7 +156,7 @@ public class SqlExecutor {
         exceptionMessage = null;
 
         sqlErrorPosition = -1;
-        queryResultTable = null;
+        //queryResultTable = null;
         try {
             if(isMaintenance)
                 conn = getReporterConnection();
@@ -172,8 +180,8 @@ public class SqlExecutor {
             } else if (queryType == QueryType.EXPLAIN_PLAN) {
                 statement.execute("EXPLAIN PLAN FOR " + query);
                 resultSet = statement.executeQuery(FETCH_EXPLAIN_PLAN_QUERY);
-                System.out.println("####");
-                System.out.println(resultSet.toString());
+                //System.out.println("####");
+                //System.out.println(resultSet.toString());
                 parseResultSet(resultSet);
             }
             long timeAfterQueryMillis = System.currentTimeMillis();
@@ -241,67 +249,10 @@ public class SqlExecutor {
     }
 
     private void parseResultSet(ResultSet resultSet) throws SQLException, UnsupportedOperationException {
-//        StringBuilder textBuilder = new StringBuilder();
-//        ResultSetMetaData metaData = resultSet.getMetaData();
 
-
-        /* Convert to JSON from Object */
-
+        /* Convert to JSON from ResultSet */
         textResults = convert(resultSet);
 
-
-//        queryResultTable = new ResultsTable(settings.getOutputDateFormat());
-//        queryResultTable.setWidth("100%");
-//        int columnCount = metaData.getColumnCount();
-//        HashMap<String, Integer> duplicatedColumnNames = new HashMap<String, Integer>();
-//        for (int columnIndex = 1; columnIndex <= columnCount; columnIndex++) {
-//            Class columnClass = String.class;
-//            int columnType = metaData.getColumnType(columnIndex);
-//            if (columnType == OracleTypes.NUMBER) {
-//                columnClass = Double.class;
-//            } else if (columnType == OracleTypes.TIMESTAMP) {
-//                columnClass = Date.class;
-//            }
-//            String columnName = metaData.getColumnName(columnIndex);
-//            textBuilder.append(columnName).append("\t");
-//            Integer nameIndex = duplicatedColumnNames.get(columnName);
-//            String columnPropertyName;
-//            if (nameIndex == null) {
-//                nameIndex = 1;
-//                columnPropertyName = columnName;
-//            } else {
-//                columnPropertyName = columnName + nameIndex;
-//                nameIndex++;
-//            }
-//            duplicatedColumnNames.put(columnName, nameIndex);
-//            queryResultTable.addContainerProperty(columnPropertyName, columnClass, null);
-//            queryResultTable.setColumnHeader(columnPropertyName, columnName);
-//        }
-//        textBuilder.append("\n");
-//        int rowNumber = 1;
-//        while (resultSet.next()) {
-//            Object[] values = new Object[columnCount];
-//            for (int columnIndex = 1; columnIndex <= columnCount; columnIndex++) {
-//                if (resultSet.getObject(columnIndex) == null) {
-//                    values[columnIndex - 1] = null;
-//                    continue;
-//                }
-//                int columnType = metaData.getColumnType(columnIndex);
-//                if (columnType == OracleTypes.NUMBER) {
-//                    values[columnIndex - 1] = resultSet.getDouble(columnIndex);
-//                } else if (columnType == OracleTypes.TIMESTAMP) {
-//                    values[columnIndex - 1] = resultSet.getTimestamp(columnIndex);
-//                } else {
-//                    values[columnIndex - 1] = resultSet.getString(columnIndex);
-//                }
-//                textBuilder.append(values[columnIndex - 1]).append("\t");
-//            }
-//            queryResultTable.addItem(values, rowNumber + "");
-//            textBuilder.append("\n");
-//            rowNumber++;
-//        }
-//        rowsCount = rowNumber - 1;
-//        textResults = textBuilder.toString();
     }
 
     /**
@@ -335,16 +286,16 @@ public class SqlExecutor {
 
      * @return the limitProperty
      */
-    Integer getLimitProperty() {
-        return limitProperty;
-    }
+//    Integer getLimitProperty() {
+//        return limitProperty;
+//    }
 
     /**
      * @return the timeoutProperty
      */
-    Integer getTimeoutProperty() {
-        return timeoutProperty;
-    }
+//    Integer getTimeoutProperty() {
+//        return timeoutProperty;
+//    }
 
     /**
      * @param usingConnectionPool the usingConnectionPool to set
@@ -366,9 +317,9 @@ public class SqlExecutor {
     /**
      * @return the queryResult
      */
-    ResultsTable getQueryResultTable() {
-        return queryResultTable;
-    }
+//    //ResultsTable getQueryResultTable() {
+//        return queryResultTable;
+//    }
 
     /**
      * @return the executionTimeMillis
@@ -380,7 +331,7 @@ public class SqlExecutor {
     /**
      * @return the affectedRowsNumber
      */
-    int getAffectedRowsCount() {
+    public int getAffectedRowsCount() {
         return affectedRowsCount;
     }
 
@@ -402,6 +353,14 @@ public class SqlExecutor {
         return sqlErrorPosition;
     }
 
+//    public void setLimitProperty(int limitProperty) {
+//        this.limitProperty = limitProperty;
+//    }
+
+//    public void setTimeoutProperty(int timeoutProperty) {
+//        this.timeoutProperty = timeoutProperty;
+//    }
+
     /**
      * @return the textResults
      */
@@ -409,69 +368,97 @@ public class SqlExecutor {
         return textResults;
     }
 
+    public String[] getFieldLists() {
+        return fieldLists;
+    }
 
-    public JSONArray convert( ResultSet rs )
-            throws SQLException, JSONException
+
+    public JSONArray convert(ResultSet rs ) throws SQLException, JSONException
     {
         rowsCount = 0;
         JSONArray json = new JSONArray();
         ResultSetMetaData rsmd = rs.getMetaData();
+
+        Set<String> field = new HashSet<String>();
+
 
         int j=1;
         while(rs.next()) {
             int numColumns = rsmd.getColumnCount();
             JSONObject obj = new JSONObject();
 
+
             for (int i=1; i<numColumns+1; i++) {
                 String column_name = rsmd.getColumnName(i);
 
                 if(rsmd.getColumnType(i)==java.sql.Types.ARRAY){
-                    obj.put(column_name, rs.getArray(column_name));
+                    obj.putOpt(column_name, rs.getArray(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.BIGINT){
                     obj.put(column_name, rs.getInt(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.BOOLEAN){
                     obj.put(column_name, rs.getBoolean(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.BLOB){
                     obj.put(column_name, rs.getBlob(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.DOUBLE){
                     obj.put(column_name, rs.getDouble(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.FLOAT){
                     obj.put(column_name, rs.getFloat(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.INTEGER){
                     obj.put(column_name, rs.getInt(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==Types.LONGVARCHAR){
                     obj.put(column_name, rs.getString(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.VARCHAR){
                     obj.put(column_name, rs.getString(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.TINYINT){
                     obj.put(column_name, rs.getInt(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.SMALLINT){
                     obj.put(column_name, rs.getInt(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.DATE){
                     obj.put(column_name, rs.getDate(column_name));
+                    field.add(column_name);
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.TIMESTAMP){
                     obj.put(column_name, rs.getTimestamp(column_name));
+                    field.add(column_name);
                 }
                 else{
                     obj.put(column_name, rs.getObject(column_name));
+                    field.add(column_name);
                 }
             }
             json.put(obj);
             rowsCount++;
         }
-
         return json;
+    }
+
+    public ByteArrayOutputStream getXlsResultTable() {
+        return xlsResultTable;
+    }
+
+    public void setXlsResultTable(ByteArrayOutputStream xlsResultTable) {
+        this.xlsResultTable = xlsResultTable;
     }
 }

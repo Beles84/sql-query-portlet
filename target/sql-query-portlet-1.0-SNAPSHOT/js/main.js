@@ -7,7 +7,6 @@ Ext.require([
 ]);
 var json=null;
 
-
 // get fields
 function buildsFiels(json){
     var uniques=[];
@@ -57,7 +56,10 @@ function getJdbc() {
 function getSQLStatement() {
     return pnSQL.items.get(0).getValue();
 }
-function getTime() {
+function setSQLStatement(sql) {
+    return pnSQL.items.get(0).setValue(sql);
+}
+function getLimit() {
     return pnLogin.items.get(1).items.get(1).items.get(0).getValue();
 }
 function getTimeOut() {
@@ -72,6 +74,7 @@ function createModel( listOfField){
     });
     return x;
 }
+
 // create store
 function createStore(model, action) {
     var x = Ext.create('Ext.data.Store', {
@@ -84,7 +87,9 @@ function createStore(model, action) {
                 user: getUser(),
                 password: getPassword(),
                 sql: getSQLStatement(),
-                jdbc: getJdbc()
+                jdbc: getJdbc(),
+                limit:getLimit(),
+                timeOut:getTimeOut()
             },
             actionMethods: {
                 read: 'POST'
@@ -123,30 +128,58 @@ function createGrid(model, lst_columns, srows_, stime_){
         columnLines: true,
         overflowY: 'auto',
         overflowX: 'auto',
+        selType: 'rowmodel',
+        //plugins: 'gridexporter',
+    // dockedItems: [{
+    //         xtype: 'pagingtoolbar',
+    //         store: model,   // same store GridPanel is using
+    //         dock: 'bottom',
+    //         displayInfo: true
+    //     }],
         tbar: [
             {
                 xtype: 'button',
                 cls: 'button-excel',
+                title: 'dsfdsfadsfadsf',
                 scale: 'large',
                 height: 20,
-                margin: '0 1 0 1'
-            }, {
+                margin: '0 1 0 1',
+                listeners: {
+                    click: function () {
+                        exportToEXL();
+                    }
+                }
+
+
+            }/*, {
                 xtype: 'button',
                 cls: 'button-save',
                 scale: 'large',
                 height: 20,
-                margin: '0 1 0 1'
+                margin: '0 1 0 1',
+                listeners: {
+                    click: function(){
+                        //alert('hi');
+                        Ext.MessageBox.alert("Sava", "Вы нажали save");
+                    }
+                }
             }, {
                 xtype: 'button',
                 cls: 'button-open',
                 scale: 'large',
                 height: 20,
-                margin: '0 1 0 1'
-            }],
+                margin: '0 1 0 1',
+                listeners: {
+                    click: function(){
+                        //alert('hi');
+                        Ext.MessageBox.alert("Open", "Вы нажали open");
+                    }
+                }
+            }*/],
 
         bbar: {
             border: false,
-            layout: 'anchor',
+            layout: 'hbox',
             items: [{
                 xtype: 'textfield',
                 name: 'rows',
@@ -171,6 +204,7 @@ function createGrid(model, lst_columns, srows_, stime_){
     });
     return x;
 }
+
 // error Panel
 function errorPanel() {
     var x = Ext.create('Ext.form.FormPanel', {
@@ -196,10 +230,6 @@ function errorPanel() {
     });
     return x;
 }
-function updateSQLGrid(){
-
-}
-
 
 function selectSQLGrid(action){
     Ext.Ajax.request({
@@ -210,7 +240,9 @@ function selectSQLGrid(action){
             user: getUser(),
             password: getPassword(),
             sql: getSQLStatement(),
-            jdbc: getJdbc()
+            jdbc: getJdbc(),
+            limit:getLimit(),
+            timeOut:getTimeOut()
         },
         success: function(result){
            json = JSON.parse(result.responseText);
@@ -223,6 +255,7 @@ function selectSQLGrid(action){
                var listSqlFields = buildsFiels(json.data);
                var sqlModel = createModel(listSqlFields);
 
+
                var grid = createGrid(
                    createStore(sqlModel,action),
                    buildColumnsInfo(json.data),
@@ -232,19 +265,103 @@ function selectSQLGrid(action){
                resultsContainer.add(grid);
            } /*end of if*/
             else {
-                var wError =errorPanel();
-                wError.items.get(0).setValue("In position "+json.error.error_pos+", "+json.error.error_msg);
-               pnResultSQL.setHeight(70);
-               resultsContainer.add(wError);
+                var e_pos =json.error.error_pos;
+                var e_msg="";
+                if (json.error.error_msg) { e_msg = json.error.error_msg; }
+                var time = json.detail.time;
+                var row = json.detail.rows;
+
+
+                    var wError =errorPanel();
+
+                   if (action =='DO_UPDATE') {
+                     err_msg = e_msg+" estimate time: "+time+", affected rows: "+row;
+                       pnResultSQL.setHeight(100);
+                   } else {
+                       err_msg = "In position "+e_pos+", "+e_msg;
+                       pnResultSQL.setHeight(70);
+                   }
+
+                   wError.items.get(0).setValue(err_msg);
+                   resultsContainer.add(wError);
                 }
         }, /*end of success*/
         failure: function(f,a){
-              Ext.MessageBox.alert("FUCK YOU!", "Ajax.request пиздец! Возможно Glassfish упал.");
+              Ext.MessageBox.alert("UPS..!", "Ajax.request problem! Возможно Glassfish упал.");
          }
 
     }); /*end Ajax request*/
 } /*end of function*/
 
+function ShowError(smsg) {
+    var wError = errorPanel();
+    wError.items.get(0).setValue(smsg);
+    pnResultSQL.setHeight(70);
+    resultsContainer.add(wError);
+}
+
+// beauty sql
+function beautySQL(oldSQL) {
+    Ext.Ajax.request({
+        url: dataUrl,
+        method: 'POST',
+        params: {
+            act: 'DO_BEAUTY',
+            sql: getSQLStatement()
+        },
+        success: function (result) {
+           setSQLStatement(result.responseText);
+        }
+    });
+}
+// save
+function  createfile(){
+    Ext.Ajax.request({
+        url: dataUrl,
+        method: 'POST',
+        params: {
+            act: 'DO_SAVE',
+            sql: getSQLStatement()
+        },
+        success: function (result) {
+            Ext.MessageBox.alert("Sava", result.responseText);
+        }
+    });
+}
+function  readfile(){
+    Ext.Ajax.request({
+        url: dataUrl,
+        method: 'POST',
+        params: {
+            act: 'DO_OPEN',
+            sql: getSQLStatement()
+        },
+        success: function (result) {
+            setSQLStatement(result.responseText);
+        }
+    });
+}
+
+function exportToEXL(){
+   var hiddenForm = Ext.create('Ext.form.Panel',{
+       title: 'hiddenFormExport',
+       standardSubmit: true,
+       url:dataUrl,
+       timeout: 120000,
+       height: 0,
+       width: 0,
+       hidden: true,
+       items: [
+           {xtype:'textfield', name:'act', value:'DO_EXPORT'},
+           {xtype:'textfield', name:'user', value:getUser()},
+           {xtype:'textfield', name:'password', value:getPassword()},
+           {xtype:'textfield', name:'sql', value:getSQLStatement()},
+           {xtype:'textfield', name:'jdbc', value:getJdbc()},
+       ]
+   });
+
+   hiddenForm.getForm().submit();
+ }
     var pnSQL = new Ext.FormPanel({
         labelWidth:100,
         frame:true,
@@ -263,11 +380,43 @@ function selectSQLGrid(action){
             height: 120
              },
             {
-            xtype:'button',
-            cls: 'button-beauty',
-            scale:'large',
-            height:20,
-            margin: '0 1 0 1'
+                xtype:'button',
+                cls: 'button-beauty',
+                scale:'large',
+                height:20,
+                margin: '0 1 0 1',
+                listeners: {
+                   click: function(){
+                            beautySQL(getSQLStatement());
+                   }
+                }
+            }
+            , {
+                xtype: 'button',
+                cls: 'button-save',
+                scale: 'large',
+                height: 20,
+                margin: '0 1 0 1',
+                listeners: {
+                    click: function(){
+                        //alert('hi');
+                        //Ext.MessageBox.alert("Sava", "Вы нажали save");
+                        createfile();
+                    }
+                }
+            }, {
+                xtype: 'button',
+                cls: 'button-open',
+                scale: 'large',
+                height: 20,
+                margin: '0 1 0 1',
+                listeners: {
+                    click: function(){
+                        //alert('hi');
+                        readfile()
+                        //Ext.MessageBox.alert("Open", "Вы нажали open");
+                    }
+                }
             },
             {
                 xtype:'panel',
@@ -284,6 +433,7 @@ function selectSQLGrid(action){
                         text: 'Update',
                         scale: 'small',
                         handler: function(){
+                            selectSQLGrid('DO_UPDATE');
 
                         }
                     },{
@@ -302,6 +452,7 @@ function selectSQLGrid(action){
             }]
 
     });
+
     var pnLogin = new Ext.Panel({
         title       : 'DB Connection strings',
         header: false,
@@ -381,14 +532,6 @@ function selectSQLGrid(action){
         height:300
     });
 
-class Main {
- getPanelSQL(){
- }
- getPanelLogin(){
- }
- getResultPanel(){
- }
-}
     Ext.onReady(function() {
         mainPanel = Ext.create('Ext.form.Panel',{
             width: '100%',
@@ -398,4 +541,3 @@ class Main {
             items : [ pnSQL,pnLogin,pnResultSQL]
         });
      });
-new Main();
