@@ -7,77 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b78ffd-3435-4135-b36e-f3603ba5fc61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_stax_api_1_0_spec_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/converter/Beauty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/converter/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/converter/Convert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/converter/SQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Executor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/configuration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/json-lib-2.1-rev6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/json2excel.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/sql_query_portlet_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/sql_query_portlet_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/converter/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Permission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-query-portlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sql-query-portlet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Actions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/IActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/ResultsTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/SqlExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/SqlExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/LIBS/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/converter/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/converter/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/converter/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/converter/Convert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/MainPortlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/MainPortlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/MyResponce.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ext/ext-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ext/ext-all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/liferay-portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/liferay-portlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/portlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/DO/Actions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/DO/IActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/DO/ResultsTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/DO/SqlExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/portlet/sample/DO/SqlExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/LIBS/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/model/EActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/portlet/sample/model/EActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/model/MyResponce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/DO/Actions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/DO/IActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/DO/ResultsTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/DO/SqlExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/DO/SqlExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/LIBS/Library.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/model/EActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/model/EActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/model/MyResponce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/sql.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/lib/commons-collections4-4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/lib/poi-3.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-schemas-3.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/lib/xmlbeans-2.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/ext/ext-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/ext/ext-all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/liferay-portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/liferay-portlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/portlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -99,16 +52,26 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_eml-lportal" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_eml-lportal" type="feb32156:DbDataSourceImpl" />
+        <item name="LPORTAL: schema" type="ac44c5e0:OracleImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainPortlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainPortlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/MainPortlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+            <state relative-caret-position="1890">
+              <caret line="126" column="98" lean-forward="true" selection-start-line="126" selection-start-column="98" selection-end-line="126" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,11 +79,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="152" column="26" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="241" column="25" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
+            <state relative-caret-position="364">
+              <caret line="438" column="22" lean-forward="true" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Permission.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Permission.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -128,39 +130,17 @@
       <file leaf-file-name="SQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/SQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/SqlExecutor.java">
+      <file leaf-file-name="Convert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Convert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9944#9945#0" expanded="true" />
-                <element signature="e#9984#9985#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SQLSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1495#1496#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="451">
+              <caret line="81" column="32" lean-forward="true" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -178,11 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>renderTo</find>
-      <find>width</find>
-      <find>checkContain</find>
-      <find>resultSQL</find>
-      <find>loginPanel</find>
       <find>url</find>
       <find>total</find>
       <find>rowsCount</find>
@@ -208,6 +183,11 @@
       <find>baos</find>
       <find>actions</find>
       <find>runQuery</find>
+      <find>buttons</find>
+      <find>Ajax</find>
+      <find>Save</find>
+      <find>save</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace>String</replace>
@@ -229,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/QuerySettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/LIBS/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Actions.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/converter/json/excel/Json2Excel.java" />
@@ -240,16 +219,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/converter/json/Convert.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/converter/Beauty.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Executor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/converter/Convert.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/converter/Save.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/converter/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/converter/SQL.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/SqlExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/converter/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/portlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/liferay-portlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/converter/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Permission.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/portlet/sample/MainPortlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/converter/Convert.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
       </list>
     </option>
   </component>
@@ -358,10 +342,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="278" />
-    <option name="y" value="19" />
-    <option name="width" value="1445" />
-    <option name="height" value="1133" />
+    <option name="x" value="431" />
+    <option name="y" value="243" />
+    <option name="width" value="1637" />
+    <option name="height" value="1093" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -369,8 +353,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -403,7 +385,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
@@ -412,6 +394,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="DO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
@@ -422,13 +419,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/beles/Desktop/bsbnb/Sql-query/sql-query-portlet/src/main/webapp/js/main.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/libs/vaadin-formatted-table-0.1.jar!/" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../usci_2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -647,12 +647,27 @@
       <workItem from="1538620633082" duration="5531000" />
       <workItem from="1538652082546" duration="9434000" />
       <workItem from="1538707954535" duration="49000" />
-      <workItem from="1538708495945" duration="12302000" />
+      <workItem from="1538708495945" duration="16411000" />
+      <workItem from="1538727717997" duration="2497000" />
+      <workItem from="1538974173367" duration="1452000" />
+      <workItem from="1538991221020" duration="6844000" />
+      <workItem from="1539054475322" duration="7993000" />
+      <workItem from="1539153488053" duration="1793000" />
+      <workItem from="1539175135422" duration="6979000" />
+      <workItem from="1539227888008" duration="9882000" />
     </task>
+    <task id="LOCAL-00001" summary="Готовый для показа">
+      <created>1538720863904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538720863904</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296671000" />
+    <option name="totallyTimeSpent" value="338220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -664,42 +679,43 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1175" extended-state="6" />
+    <frame x="67" y="36" width="1662" height="1045" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053364" side_tool="true" visible="true" weight="0.32983795" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4994664" weight="0.32919848" />
-      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.3335112" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5032017" side_tool="true" weight="0.32983795" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49893278" weight="0.32888466" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.26951674" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="5" weight="0.31309298" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893278" weight="0.35782441" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32919848" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4994664" weight="0.32888466" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32919848" />
-      <window_info anchor="right" id="Quick Notes" order="9" weight="0.32924226" />
+      <window_info anchor="right" id="Quick Notes" order="9" weight="0.32817504" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" visible="true" weight="0.32983795" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6696905" weight="0.24022879" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4967983" weight="0.32901296" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6691569" visible="true" weight="0.24591948" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49839914" weight="0.24118207" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.13020277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.26889715" />
       <window_info id="Web" order="2" sideWeight="0.50071126" side_tool="true" weight="0.19583778" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49893278" weight="0.21734986" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.28444004" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49893278" weight="0.2840801" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49839914" weight="0.21734986" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Quick Notes" order="9" weight="0.32953313" />
@@ -770,6 +786,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Готовый для показа" />
+    <option name="LAST_COMMIT_MESSAGE" value="Готовый для показа" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -818,108 +838,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../experiment/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
-    <entry file="jar:///opt/java/jdk1.8.0_171/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/scout/rt/org.eclipse.scout.json/8.0.0.021_Simrel_2018_09/org.eclipse.scout.json-8.0.0.021_Simrel_2018_09.jar!/org/json/JSONArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="282" column="46" selection-start-line="282" selection-start-column="46" selection-end-line="282" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/json/excel/Json2Excel.class" />
-    <entry file="jar:///opt/java/jdk1.8.0_171/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="189" column="12" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/scout/rt/org.eclipse.scout.json/8.0.0.021_Simrel_2018_09/org.eclipse.scout.json-8.0.0.021_Simrel_2018_09.jar!/org/json/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.6/poi-3.6.jar!/org/apache/poi/hssf/usermodel/HSSFRichTextString.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/WritableFont.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/java/jdk1.8.0_171/src.zip!/java/io/ByteArrayOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bsbnb/vaadin/formattedTable/FormattedTable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin/6.8.14/vaadin-6.8.14-sources.jar!/com/vaadin/ui/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="520" column="49" selection-start-line="520" selection-start-column="39" selection-end-line="520" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/vaadin-formatted-table-0.1.jar!/com/bsbnb/vaadin/formattedtable/FormattedTable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="278" column="16" selection-start-line="278" selection-start-column="16" selection-end-line="278" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/kz/bsbnb/usci/eav/model/0.0.1-SNAPSHOT/model-0.0.1-SNAPSHOT.jar!/kz/bsbnb/usci/eav/model/RefListResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/kz/bsbnb/usci/eav/model/0.0.1-SNAPSHOT/model-0.0.1-SNAPSHOT.jar!/kz/bsbnb/usci/eav/model/RefColumnsResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/json/excel/Json2Excel.java" />
     <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/biff/LabelRecord.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -972,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/WritableSheet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Actions.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/LIBS/Library.java" />
     <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/WritableWorkbook.class">
@@ -989,20 +900,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/MyResponce.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Beauty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,37 +938,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Save.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Convert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-681">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Save.java" />
     <entry file="jar:///opt/java/jdk1.8.0_171/src.zip!/java/sql/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3330">
@@ -1082,54 +953,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/portlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="241" column="25" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
+        <state relative-caret-position="495">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/SQL.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="405">
           <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/SqlExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+        <state relative-caret-position="390">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/liferay-portlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Beauty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9330af56-9702-407c-97c1-85225ceafcb8/schema/LPORTAL/table/PORTLET.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9330af56-9702-407c-97c1-85225ceafcb8/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9330af56-9702-407c-97c1-85225ceafcb8/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/portlet/portlet-api/2.0/portlet-api-2.0-sources.jar!/javax/portlet/filter/PortletRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3468">
+          <caret line="334" column="24" selection-start-line="334" selection-start-column="24" selection-end-line="334" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/portlet/portlet-api/2.0/portlet-api-2.0-sources.jar!/javax/portlet/PortletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="547" column="23" selection-start-line="547" selection-start-column="23" selection-end-line="547" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/liferay/portal/portal-service/6.2.1/portal-service-6.2.1-sources.jar!/com/liferay/portal/util/PortalUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="1504" column="23" selection-start-line="1504" selection-start-column="23" selection-end-line="1504" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/liferay/portal/portal-service/6.2.1/portal-service-6.2.1-sources.jar!/com/liferay/portal/service/RoleLocalServiceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="502" column="32" selection-start-line="502" selection-start-column="28" selection-end-line="502" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/liferay/portal/portal-service/6.2.1/portal-service-6.2.1-sources.jar!/com/liferay/portal/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="229" column="57" selection-start-line="229" selection-start-column="57" selection-end-line="229" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/SQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="152" column="26" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/format/VerticalAlignment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/WritableCellFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/WritableCellFeatures.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/WritableSheet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/libs/jxl-2.6.12.jar!/jxl/write/WritableCell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Convert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="81" column="32" lean-forward="true" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/converter/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9944#9945#0" expanded="true" />
-            <element signature="e#9984#9985#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/portlet/sample/MainPortlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+        <state relative-caret-position="1890">
+          <caret line="126" column="98" lean-forward="true" selection-start-line="126" selection-start-column="98" selection-end-line="126" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="438" column="22" lean-forward="true" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
         </state>
       </provider>
     </entry>

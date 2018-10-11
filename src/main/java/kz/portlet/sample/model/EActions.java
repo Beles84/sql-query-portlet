@@ -7,5 +7,8 @@ public enum EActions {
         DO_BEAUTY,
         DO_EXPORT,
         DO_SAVE,
-        DO_OPEN
+        DO_OPEN,
+        DO_CONFIG_SAVE,
+        DO_CONFIG_LOAD,
+        DO_PERMISSION
 }

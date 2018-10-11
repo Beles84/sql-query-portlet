@@ -5,6 +5,7 @@ import jxl.Workbook;
 import jxl.format.Border;
 import jxl.format.BorderLineStyle;
 import jxl.format.Font;
+import jxl.format.VerticalAlignment;
 import jxl.write.*;
 import jxl.write.Number;
 import org.json.JSONArray;
@@ -42,7 +43,7 @@ public class Convert {
     }
 
     /*Создать таблицу Excel*/
-    public static byte[] JSONtoByteEXL(JSONArray json) throws WriteException, IOException {
+    public static byte[] JSONtoByteEXL(JSONArray json, String strQuery) throws WriteException, IOException {
 
         WritableWorkbook workbook = null;
         String formatString = "dd.MM.yyyy";
@@ -63,16 +64,30 @@ public class Convert {
         dataFormat.setWrap(true);
         dataFormat.setShrinkToFit(true);
 
+        WritableCellFormat dataSqlFormat = new WritableCellFormat(times12font);
+        dataSqlFormat.setBorder(Border.ALL, BorderLineStyle.THIN);
+        dataSqlFormat.setShrinkToFit(true);
+        dataSqlFormat.setVerticalAlignment(VerticalAlignment.CENTRE);
+
+        dataSqlFormat.setWrap(true);
+        dataSqlFormat.setShrinkToFit(true);
+
+
         WritableCellFormat dateFormat = new WritableCellFormat(new jxl.write.DateFormat(formatString));
         dateFormat.setBorder(Border.ALL, BorderLineStyle.THIN);
 
         CellView cellView = new CellView();
-        cellView.setSize(5000);
+        cellView.setSize(5000); cellView.setAutosize(true);
 
         ByteArrayOutputStream baos = null;
         baos = new ByteArrayOutputStream();
         workbook = Workbook.createWorkbook(baos);
-        WritableSheet sheet = workbook.createSheet("Sheet1", 0);
+        WritableSheet sheet = workbook.createSheet("Data", 0);
+        WritableSheet sheet2 = workbook.createSheet("SQL", 1);
+        sheet2.setRowView(0, cellView);
+        sheet2.setColumnView(0, cellView);
+        strQuery = strQuery.replaceAll("[\\r\\n]", " ");
+        sheet2.addCell(new jxl.write.Label(0, 0, strQuery, dataSqlFormat));
 
         int rowCounter = 0;
 

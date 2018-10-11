@@ -436,7 +436,8 @@ function exportToEXL(){
                             selectSQLGrid('DO_UPDATE');
 
                         }
-                    },{
+                    },
+                    {
                         text: 'Plan',
                         scale: 'small',
                         handler: function(){
@@ -519,7 +520,13 @@ function exportToEXL(){
                 ]
             }
 
-        ]
+        ],
+        // buttons:[{
+        //     text: 'Save',
+        //     scale: 'small',
+        //     handler: function(){
+        //         //selectSQLGrid('DO_SELECT');
+        //     }}]
 
     });
 
@@ -531,9 +538,57 @@ function exportToEXL(){
         layout: 'fit',
         height:300
     });
-
+function checkPermission(){
+    var b;
+    Ext.Ajax.request({
+        url: dataUrl,
+        method: 'POST',
+        params: {
+            act: 'DO_PERMISSION'
+        },
+        success: function (result) {
+            x = JSON.parse(result.responseText);
+            console.log("permission: "+x.permission);
+            if (x.permission) {
+                b = true
+            } else
+                Ext.create('Ext.window.Window', {
+                    title: 'Hello',
+                    header: false,
+                    resizable: false,
+                    closable : false,
+                    renderTo : 'sql-query-portlet-content',
+                    modal:true,
+                    //renderTo: Ext.getBody(),
+                    border: false,
+                    height: 80,
+                    width: '50%',
+                    style: 'padding: 0; border-width: 0;',
+                    bodyStyle:"padding:20 20 20 20px;background:#FF0000;background-color:#FF0000; color: #FFFFFF",
+                    layout: {
+                        type: 'vbox',
+                        align: 'center',
+                        pack: 'center'
+                    },
+                    items:[
+                        {
+                            xtype: 'label',
+                            style: 'font: normal 18px Roman times',
+                            html: '<b>У вас не достаточно прав для портлета SQL-query</b>'
+                        },
+                        {
+                            xtype: 'label',
+                            html:'Для работы с портлетом SQL-Query необходим права "SQLDeveloper"'
+                        }
+                    ]
+                }).show();
+        }
+    });
+    return b;
+}
     Ext.onReady(function() {
-        mainPanel = Ext.create('Ext.form.Panel',{
+        checkPermission();
+        var mainPanel = Ext.create('Ext.form.Panel',{
             width: '100%',
             maxheight: 600,
             autoHeight:true,

@@ -7,7 +7,7 @@ import java.util.Properties;
 public class Config {
 
     //Writing Configuration
-    public static void SetPreference(String Key, String Value){
+    public static void setPreference(String Key, String Value){
         Properties configFile = new Properties();
         try {
             InputStream f = new FileInputStream("configuration.xml");

@@ -4,13 +4,13 @@ import kz.portlet.sample.DO.QuerySettings;
 import kz.portlet.sample.DO.QueryType;
 
 public class SQLSettings {
-    private QuerySettings qs = null;
-    private String user=null;
-    private String sql=null;
-    private String password=null;
-    private String dbUrl=null;
-    private String limit = null;
-    private String timeOut = null;
+    private QuerySettings qs = null; // portet's settings
+    private String user=null;        // user
+    private String sql=null;         // SQL
+    private String password=null;    // password
+    private String dbUrl=null;       // url db
+    private String limit = null;     // limit
+    private String timeOut = null;   // time out
     private String act= null;
     private QueryType qt=QueryType.SELECT;
 

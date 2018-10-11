@@ -6,7 +6,9 @@ com/converter/Beauty.class
 kz/portlet/sample/MainPortlet.class
 com/converter/SQL.class
 kz/portlet/sample/DO/Executor.class
+com/converter/Role.class
 kz/portlet/sample/model/EActions.class
+kz/portlet/sample/DO/Permission.class
 kz/portlet/sample/MainPortlet$1.class
 kz/portlet/sample/DO/SqlExecutor.class
 com/converter/Convert.class

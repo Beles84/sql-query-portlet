@@ -33,6 +33,7 @@
 <%--Включаем ext js--%>
 <script src="<%=request.getContextPath()%>/ext/ext-all.js" type="text/javascript"></script>
 <link href="<%=request.getContextPath()%>/ext/resources/css/ext-all.css" rel="stylesheet" media="all"/>
+<%--<link href="<%=request.getContextPath()%>/ext/resources/css/ext-all-neptune.css" rel="stylesheet" media="all"/>--%>
 
 <div id="sql-query-portlet-content">
 </div>
