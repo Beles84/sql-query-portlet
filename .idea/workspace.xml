@@ -7,31 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b78ffd-3435-4135-b36e-f3603ba5fc61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/converter/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/DO/Permission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/converter/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/converter/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/converter/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/converter/Convert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/MainPortlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/MainPortlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/EActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/portlet/sample/model/SQLSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/liferay-portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/liferay-portlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/portlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/portlet/sample/MainPortlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/portlet/sample/model/EActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/portlet/sample/model/EActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/MainPortlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/model/EActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/classes/kz/portlet/sample/model/EActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/liferay-portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/liferay-portlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/portlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/WEB-INF/portlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sql-query-portlet-1.0-SNAPSHOT/view.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +68,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="-629">
               <caret line="438" column="22" lean-forward="true" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
             </state>
           </provider>
@@ -341,11 +318,11 @@
       <path value="$PROJECT_DIR$/src/main/webapp/ext/packages/ext-theme-neutral/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="431" />
-    <option name="y" value="243" />
-    <option name="width" value="1637" />
-    <option name="height" value="1093" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="67" />
+    <option name="y" value="36" />
+    <option name="width" value="1662" />
+    <option name="height" value="1139" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -365,50 +342,6 @@
               <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
               <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="DO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sql-query-portlet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sql-query-portlet" type="b2602c69:ProjectViewProjectNode" />
@@ -654,7 +587,7 @@
       <workItem from="1539054475322" duration="7993000" />
       <workItem from="1539153488053" duration="1793000" />
       <workItem from="1539175135422" duration="6979000" />
-      <workItem from="1539227888008" duration="9882000" />
+      <workItem from="1539227888008" duration="10686000" />
     </task>
     <task id="LOCAL-00001" summary="Готовый для показа">
       <created>1538720863904</created>
@@ -663,11 +596,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538720863904</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Права для пользования портлетом">
+      <created>1539257037209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539257037209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338220000" />
+    <option name="totallyTimeSpent" value="339024000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,7 +620,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="36" width="1662" height="1045" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5032017" side_tool="true" weight="0.32983795" />
@@ -701,11 +640,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32919848" />
       <window_info anchor="right" id="Quick Notes" order="9" weight="0.32817504" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4967983" weight="0.32901296" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6691569" visible="true" weight="0.24591948" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4967983" visible="true" weight="0.2274211" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6691569" weight="0.21544328" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49839914" weight="0.24118207" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.26889715" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.1802974" />
       <window_info id="Web" order="2" sideWeight="0.50071126" side_tool="true" weight="0.19583778" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -788,7 +727,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Готовый для показа" />
-    <option name="LAST_COMMIT_MESSAGE" value="Готовый для показа" />
+    <MESSAGE value="Права для пользования портлетом" />
+    <option name="LAST_COMMIT_MESSAGE" value="Права для пользования портлетом" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1136,7 +1076,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="-629">
           <caret line="438" column="22" lean-forward="true" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
         </state>
       </provider>
